@@ -1,0 +1,56 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+	font-family: Arial;
+	font-size: 14px;
+	color: #555555;
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+input {
+	font-size: 14px;
+	background-color: #ffffff;
+	color: #555555;
+	border: 1px solid #999999;
+	padding: 0px 5px;
+	height: 25px;
+}
+input[type=button] {
+	background-color: #f0f0f0;
+}
+input[type=number] {
+	width: 100px;
+}
+input[type=text] {
+	width: 204px;
+}
+.panel {
+	border: 7px solid #a9c9fd;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+.displayNone {
+	display: none;
+}
+.title {
+	font-size: 18px;
+	border-bottom: 2px solid #a9c9fd;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+}
+.section {
+	border-bottom: 1px solid #a9c9fd;
+	padding-bottom: 7px;
+	margin-bottom: 7px;
+	word-wrap: break-word;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Language" content="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="author" content="George Papakitsos - george@papakitsos.gr">
+	<title>Facebook JS SDK</title>
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="fb-root"></div>
+<div class="panel">
+	<div class="title">Available Actions</div>
+	<div>
+		<input type="button" value="LOGIN" id="buttonLogin">
+		<input type="button" value="GET MY PUBLIC PROFILE" id="buttonPublicProfile" class="displayNone">
+		<input type="button" value="SHARE DIALOG" id="buttonShareDialog" class="displayNone">
+		<input type="button" value="LOGOUT" id="buttonLogout" class="displayNone">
+	</div>
+</div>
+<div class="panel">
+	<div class="title">Action Logs</div>
+	<div id="panelData"></div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script>
+	(function(d, s, id){
+	   var js, fjs = d.getElementsByTagName(s)[0];
+	   if (d.getElementById(id)) {return;}
+	   js = d.createElement(s); js.id = id;
+	   js.src = "//connect.facebook.net/en_US/sdk.js";
+	   fjs.parentNode.insertBefore(js, fjs);
+	 }(document, 'script', 'facebook-jssdk'));
+</script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
