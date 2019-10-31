@@ -7,4 +7,4 @@ The Module requires:
 - Facebook SDK for JavaScript
 - jQuery
 
-Demo: http://papakitsos.gr/facebook-js-sdk/
+Demo: https://facebook-js-sdk.papakitsos.gr/
