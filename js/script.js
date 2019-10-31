@@ -13,7 +13,7 @@ var FbSDKModule = (function() {
 	
 	var init = function(appId) {
 		myAppID = appId;
-		FB.init({ appId: myAppID, version : "v2.2" });
+		FB.init({ appId: myAppID, version: "v2.10", cookie: true, xfbml: true });
 		bindEvents();
 	};
 	
@@ -72,9 +72,7 @@ var FbSDKModule = (function() {
 			var data =
 			'<div class="section">'+
 				"<div>User ID: "+ response.id +"</div>"+
-				"<div>First Name: "+ response.first_name +"</div>"+
-				"<div>Last Name: "+ response.last_name +"</div>"+
-				"<div>Gender: "+ response.gender +"</div>"+
+				"<div>Name: "+ response.name +"</div>"+
 			"</div>";
 			$("#panelData").append(data);
 		});
@@ -83,7 +81,7 @@ var FbSDKModule = (function() {
 	var shareDialog = function() {
 		FB.ui({
 			method: "share",
-			href: "http://papakitsos.gr/",
+			href: "https://papakitsos.gr/",
 		}, function(response) {
 			if (response && !response.error_code) $("#panelData").append('<div class="section">Posting completed!</div>');
 			else $("#panelData").append('<div class="section">Error while posting!</div>');
